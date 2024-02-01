@@ -1,5 +1,8 @@
 body {
-  background-color: #0a0a23;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #text {
@@ -15,6 +18,7 @@ body {
   color: #ffffff;
   margin: 30px auto 0px;
   padding: 10px;
+  border-radius: 5px;
 }
 
 #controls,
@@ -22,6 +26,9 @@ body {
   border: 1px solid #0a0a23;
   padding: 5px;
   color: #0a0a23;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #monsterStats {
@@ -42,4 +49,11 @@ button {
   background-color: #feac32;
   background-image: linear-gradient(#fecc4c, #ffac33);
   border: 3px solid #feac32;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #game {
+    max-width: 100%;
+  }
 }
